@@ -6,6 +6,7 @@
 
 # for num in range(16):
 #     print(num)
+import dataclasses
 x= y= z =10.5
 
 print(x)
@@ -124,45 +125,141 @@ print(student_id1)
 #     print("Pass (C)")
 # else:
 #     print("Fail (F)")
+# name = input("Enter your name: ").lower()
+# score = int(input("Enter your score: "))
 
-name = input("Enter your name: ").lower()
-score = int(input("Enter your score: "))
-
-if name == "fawaz":
+# if name == "fawaz":
     
-    print("Automatic Fail (F)")
-elif score < 0 or score > 100:
-    print("Invalid score")
-elif score >= 70:
-    print("Excellent (A)")
-elif score >= 60:
-    print("Good (B)")
-elif score >= 50:
-    print("Pass (C)")
+#     print("Automatic Fail (F)")
+# elif score < 0 or score > 100:
+#     print("Invalid score")
+# elif score >= 70:
+#     print("Excellent (A)")
+# elif score >= 60:
+#     print("Good (B)")
+# elif score >= 50:
+#     print("Pass (C)")
+# else:
+#     print("Fail (F)")
+    
+    
+
+
+# parking_lot = ["lamborghini","bughatti","lexus","toyota","ford","ferrari","mercedes","Rolls-Royce","kia","hyundai","audi","bmw"]
+
+# for i in parking_lot:
+#       print(i)
+# else:
+#     print("The lot is empty")
+
+    
+#     #  Assignment 
+    
+    
+    
+    
+    
+    
+    
+# # Assignment
+
+# # 1. Voting System
+# age_input = int(input('Enter your age for the voting system: '))
+
+
+# if age_input >= 18:
+#     print('You are eligible to vote!')
+# else:
+#     print(f'You are not eligible to vote yet. You need {18 - age_input} more years.')
+
+# # 2. Age Predictor
+# current_age = int(input('Enter your current age for the age predictor: '))
+# future_age = current_age + 5
+# print(f'In the next 5 years, you will be {future_age} years old.')
+
+# for i in range(15):
+#      print(i)
+
+# age_range = 25
+# while age_range > 18:
+#         print("fawaz is not eligble")
+#         age_range -= 1
+
+
+# for num in range(10):
+#     if num ==5:
+#         break
+#     print(num)
+# for num in range(10):
+#         if num ==5:
+#             continue
+#         print(num)
+
+
+# num1 = int(input("enter num1 :"))
+# num2 = int(input("enter num2 :"))
+
+# sum_num = num1 + num2
+# print(f'sum is {sum_num}')
+
+# tup = ("blue","red","green","white")
+# print(tup[0])
+# print(tup[3])
+
+# students_id = {'id':[1,2,3,4,5],'Name':['fawaz','eri','musty','kelvin','mofe'],'Age':[12,10,19,20,13], 'Genders':['gay','female','female(bisexual)','male','gay(100%)']}
+# for x in students_id:
+#     print(students_id.keys())
+#     print(students_id.values())
+
+
+
+
+# day = int(input("what day is it: "))
+# match day:
+#     case 1:
+#         print("sunday")
+#     case 2:
+#      print("monday")
+#     case 3:
+#      print("tuesday")
+#     case 4:
+#      print("wednesday")
+#     case 5:
+#      print("thursday")
+#     case 6:
+#      print("friday")
+#     case 7:
+#      print("saturday")    
+
+# food_menu = int(input("pick number for food 1-6 : "))
+# match food_menu:
+#         case 1:
+#             print(f"You picked number:{food_menu} which is 'chinease rice'")
+#         case 2:
+#              print(f"You picked number:{food_menu} which is 'beef soup'")
+#         case 3:
+#              print(f"You picked number:{food_menu} which is 'amala'")
+#         case 4:
+#             print(f"You picked number:{food_menu} which is 'ewedu'")
+#         case 5:
+#            print(f"You picked number:{food_menu} which is 'meat'")
+#         case 6:
+#            print(f"You picked number:{food_menu} which is 'meat soup'")                
+
+
+days =  {
+    "1: Sunday",
+    "2: Monday",
+    "3: Tuesday",
+    "4: Wednesday",
+    "5: Thursday",
+    "6: Friday",
+    "7: Saturday"
+}
+print(len(days))
+days_inp = int(input("what day is it: "))
+
+if days_inp > len(days):
+     print("wrong input")
 else:
-    print("Fail (F)")
-    
-    
-    
-    #  Assignment 
-    
-    
-    
-    
-    
-    
-    
-# Assignment
-
-# 1. Voting System
-age_input = int(input('Enter your age for the voting system: '))
-
-if age_input >= 18:
-    print('You are eligible to vote!')
-else:
-    print(f'You are not eligible to vote yet. You need {18 - age_input} more years.')
-
-# 2. Age Predictor
-current_age = int(input('Enter your current age for the age predictor: '))
-future_age = current_age + 5
-print(f'In the next 5 years, you will be {future_age} years old.')
+    print(f" you picked {days.get(str(days_inp))}")
